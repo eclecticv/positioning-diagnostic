@@ -1,4 +1,4 @@
-# Positioning Doctor
+# Positioning
 
 Analyze any homepage's positioning using frameworks from April Dunford, Fletch PMM, Geoffrey Moore, and Al Ries & Jack Trout. Get a score, find what's broken, and know what to fix first.
 
@@ -9,28 +9,27 @@ This is a **diagnostic tool** — it tells you what's wrong with your positionin
 ### Option 1: Via And/or Labs Marketplace (Recommended)
 
 ```bash
-/plugin marketplace add eclecticv/positioning-doctor
-/plugin install positioning-doctor
+/andor install positioning
 ```
 
-This adds the And/or Labs marketplace to Claude Code and installs the positioning-doctor plugin. You'll get automatic updates when new versions are released.
+This adds the And/or Labs marketplace to Claude Code and installs the "Positioning" skill. You'll get automatic updates when new versions are released.
 
 ### Option 2: Direct Git Clone
 
 ```bash
-git clone https://github.com/eclecticv/positioning-doctor.git ~/.claude/skills/positioning-doctor
+git clone https://github.com/eclecticv/positioning.git ~/.claude/skills/positioning
 ```
 
 That's it. The skill is available immediately in your next Claude Code session.
 
 ### Option 3: Manual Install
 
-Download the ZIP from this repo and copy the `.md` files into `~/.claude/skills/positioning-doctor/`.
+Download the ZIP from this repo and copy the `.md` files into `~/.claude/skills/positioning/`.
 
 ## Commands
 
 | Command | What It Does |
-|---------|-------------|
+|---------|--------------|
 | `/diagnose <url>` | Quick 5-second test + MECLABS score (out of 20) |
 | `/audit <url>` | Full 100-point positioning audit |
 | `/alignment` | Generate survey to test if your team agrees on positioning |
@@ -60,7 +59,7 @@ You'll get:
 ## Scoring (100-point scale)
 
 | Dimension | Points | What It Measures |
-|-----------|--------|-----------------|
+|-----------|--------|------------------|
 | Clarity | 25 | Can someone understand what you do in 5 seconds? |
 | Differentiation | 25 | Is your "why better" specific and provable? |
 | Value Proposition | 25 | Appeal, exclusivity, clarity, credibility (MECLABS) |
@@ -88,20 +87,19 @@ This repository serves as both a Claude Code skill and the And/or Labs marketpla
 
 To add the marketplace:
 ```bash
-/plugin marketplace add eclecticv/positioning-doctor
+/andor install positioning
 ```
 
-Then browse and install plugins:
+Browse other plugins using:
 ```bash
 /plugin list
-/plugin install positioning-doctor
 ```
 
 ## Compatibility
 
 This skill follows the open [Agent Skills standard](https://github.com/anthropics/skills) (SKILL.md). It works with:
 - **Claude Code** (primary)
-- **Codex CLI** and other tools that support SKILL.md
+- **Codex CLI** and similar tools that support SKILL.md.
 
 ## License
 
